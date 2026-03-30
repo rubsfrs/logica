@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando comando FOR</title>
+</head>
+<body>
+    <h1>Testando comando FOR</h1>
+    <script>
+        let tabuada = parseInt(prompt("Digite a tabuada desejada: "))
+
+        /* document.write("1 X " + tabuada + " = " + tabuada * 1)
+        document.write("<br>2 X " + tabuada + " = " + tabuada * 2)
+        document.write("<br>3 X " + tabuada + " = " + tabuada * 3)
+        document.write("<br>4 X " + tabuada + " = " + tabuada * 4)
+        document.write("<br>5 X " + tabuada + " = " + tabuada * 5) */
+
+        for(let n=1; n<=20; n++){ /* o for faz o comando entrar em looping, começando do número 1 e indo até o 20. o ++ adiciona 1 unidade a cada comando executado. N é pra números. */
+            document.write(n + " x " + tabuada + " = " + tabuada * n + "<br>")
+        }
+    </script>
+</body>
+</html>

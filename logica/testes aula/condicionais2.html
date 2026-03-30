@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos condicionais usando javascript</title>
+</head>
+<body>
+    <h1>Testando comandos</h1>
+
+    <script>
+        let cor = prompt("Digite uma cor (Amarelo, Vermelho, Verde): ").toLowerCase() //toLowerCase serve para deixar minúsculo, mesmo se o usuário digitar com letra maiúscula
+
+        if (cor === "vermelho"){
+            alert("PARE!!!")
+        }
+        else if (cor === "amarelo"){
+            alert("ATENÇÃO!!!")
+        }
+        else if (cor === "verde"){
+            alert("Siga em frente!")
+        }
+        else{
+            alert("Cor inválida! Digite Amarelo, Vermelho ou Verde.")
+        }
+    </script>
+</body>
+</html>

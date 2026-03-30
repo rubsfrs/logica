@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade em dias</title>
+</head>
+<body>
+    <h1>Calculadora de Idade em Dias</h1>
+
+    <script>
+    let IdadeAnos = parseInt(prompt("Insira a sua idade em anos:"))
+    let IdadeMeses = parseInt(prompt("Insira a quantidade de meses:"))
+    let IdadeDias = parseInt(prompt("Insira a quantidade de dias:"))
+
+    let TotalDias = (IdadeAnos * 365) + (IdadeMeses * 30) + IdadeDias
+
+    document.write("A sua idade em dias é: " + TotalDias)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King® | Burger King® Brasil - Cardápios</title>
+</head>
+<body>
+    <h1>Escolha o seu combo usando o Burger King®</h1>
+
+    <script>
+        let Combo = parseInt(prompt("Insira o número do combo que deseja: (de 1 a 5)"))
+        let ComboSelecionado;
+
+        switch(Combo){
+            case 1: ComboSelecionado = "<br> <h2> Combo Picanha Barbecue Bacon </h2> <h3> R$ 36,90 </h3> O delícioso picanha, agora com molho barbecue e bacon."
+            break;
+            case 2: ComboSelecionado = "<br> <h2> Combo Whopper® </h2> <h3> R$ 29,90 </h3> Suculento hambúrguer de pura carne bovina, queijo derretido, picles, alface, tomate, cebola, maionese e ketchup."
+            break;
+            case 3: ComboSelecionado = "<br> <h2> Combo Stacker Triplo </h2> <h3> R$ 32,90 </h3> Carne, queijo e 2 fatias de bacon. Tudo multiplicado por 3! É um exagero de sabor!"
+            break;
+            case 4: ComboSelecionado = "<br> <h2> Combo Cheeseburger Duplo com Bacon </h2> <h3> R$ 31,90 </h3> Dois suculentos hambúrgueres de pura carne bovina, queijo derretido, picles, bacon crocante, ketchup e mostarda."
+            break;
+            case 5: ComboSelecionado = "<br> <h2> Combo Cheddar Duplo </h2> <h3> R$ 28,90 </h3> Pão preto integral com gergelim, dois hambúrgueres grelhados, queijo cheddar cremoso e pedacinhos de cebolas defumadas."
+            break;
+            default: ComboSelecionado = "<h2> Combo inexistente! Escolha um número de 1 a 5. </h2>"
+        }
+        document.write(ComboSelecionado)
+    </script>
+</body>
+</html>

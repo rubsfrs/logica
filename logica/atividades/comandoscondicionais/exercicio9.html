@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de salários mínimos</title>
+</head>
+<body>
+    <h1>Calculadora de Salários Mínimos</h1>
+
+    <script>
+        let SalarioMinimo = 788.00.toFixed(2)
+        let SalarioUsuario = parseFloat(prompt("Digite o valor do seu salário: "))
+
+        let QuantidadeSalarios = (SalarioUsuario / SalarioMinimo).toFixed(2)
+        document.write("Você ganha " + QuantidadeSalarios + " salários mínimos.")
+    </script>
+</body>
+</html>

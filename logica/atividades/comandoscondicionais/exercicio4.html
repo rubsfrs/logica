@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendente</title>
+</head>
+<body>
+    <h1>Mostrar valores em ordem descendente</h1>
+
+    <script>
+        let num1 = parseInt(prompt("Digite o primeiro número: "))
+        let num2 = parseInt(prompt("Digite o segundo número: "))
+        let num3 = parseInt(prompt("Digite o terceiro número: "))
+
+        if (num1 >= num2 && num1 >= num3){
+            if (num2 >= num3){
+                document.write(num1 + "<br>" + num2 + "<br>" + num3)
+            }else{
+                document.write(num1 + "<br>" + num3 + "<br>" + num2)
+            }
+        }else if (num2 >= num1 && num2 >= num3){
+            if (num1 >= num3){
+                document.write(num2 + "<br>" + num1 + "<br>" + num3)
+            }else{
+                document.write(num2 + "<br>" + num3 + "<br>" + num1)
+            }
+        }else{
+            if (num1 >= num2){
+                document.write(num3 + "<br>" + num1 + "<br>" + num2)
+            }else{
+                document.write(num3 + "<br>" + num2 + "<br>" + num1)
+            }
+        }
+    </script>
+</body>
+</html>

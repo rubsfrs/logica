@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão dólar - real</title>
+</head>
+<body>
+    <h1>Calculadora de conversão de dólar para real</h1>
+
+    <script>
+        let cotacaoDolar = parseFloat(prompt("Digite a cotação atual do dólar: "))
+        let valorDolar = parseFloat(prompt("Digite o valor em dólares que deseja converter: "))
+
+        let valorReal = cotacaoDolar * valorDolar
+        document.write("Com base na cotação de R$ " + cotacaoDolar.toFixed(2) + ", o valor em reais é: R$ " + valorReal.toFixed(2))
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando cálculos usando javascript</title>
+</head>
+<body>
+    
+    <h1>Testando cálculos usando javascript</h1>
+
+    <script>
+        let num1 = parseFloat(prompt("Entre com o primeiro número: ")) // parseFloat converte a string digitada pelo usuário em um número decimal
+        document.write("O primeiro número é: " + num1)
+
+        let num2 = parseFloat(prompt("Entre com o segundo número: "))
+        document.write("<br>O segundo número é: " + num2)
+
+        let soma = num1 + num2 // soma os dois números
+        document.write("<br>A soma dos números é: " + soma)
+
+        let media = (num1 + num2) / 2 // calcula a média dos dois números
+        document.write("<br>A média dos números é: " + media)
+
+        let multiplica = num1 * num2 // multiplica os dois números
+        document.write("<br>A multiplicação dos números é: " + multiplica)
+
+        let divisao = num1 / num2 // divide os dois números
+        document.write("<br>A divisão dos números é: " + divisao)
+    </script>
+
+</body>
+</html>

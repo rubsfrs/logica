@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoa mais nova</title>
+</head>
+<body>
+    <h1>Calculadora da pessoa mais nova entre 10 pessoas</h1>
+
+    <script>
+        let idade1 = parseFloat(prompt("Digite a idade da primeira pessoa: "))
+        let idade2 = parseFloat(prompt("Digite a idade da segunda pessoa: "))
+        let idade3 = parseFloat(prompt("Digite a idade da terceira pessoa: "))
+        let idade4 = parseFloat(prompt("Digite a idade da quarta pessoa: "))
+        let idade5 = parseFloat(prompt("Digite a idade da quinta pessoa: "))
+        let idade6 = parseFloat(prompt("Digite a idade da sexta pessoa: "))
+        let idade7 = parseFloat(prompt("Digite a idade da sétima pessoa: "))
+        let idade8 = parseFloat(prompt("Digite a idade da oitava pessoa: "))
+        let idade9 = parseFloat(prompt("Digite a idade da nona pessoa: "))
+        let idade10 = parseFloat(prompt("Digite a idade da décima pessoa: "))
+
+        let menorIdade = Math.min(idade1, idade2, idade3, idade4, idade5, idade6, idade7, idade8, idade9, idade10) // Math.min() serve para retornar o menor valor entre os números
+        document.write("A pessoa mais nova tem " + menorIdade + " anos.")
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisível por 10, 5, 2 ou nenhum</title>
+</head>
+<body>
+    <h1>Divisível por 10, 5, 2 ou nenhum</h1>
+    <h2><br>Descubra se seu número é divisível por 10, 5, 2 ou por nenhum deles.</h2>
+
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro: "))
+        let resultado
+
+        if (numero % 10 === 0){ //% serve para o resto da divisão. Retorna o valor que sobra após a divisão de números. === serve para saber se os dois valores são idênticos
+            resultado = "O seu número é divisível por 10."
+        } else if (numero % 5 === 0){
+            resultado = "O seu número é divisível por 5."
+        } else if (numero % 2 === 0){
+            resultado = "O seu número é divisível por 2."
+        } else{
+            resultado = "O seu número não é divisível por 10, 5 ou 2."
+        }
+
+        document.write("O número digitado foi: " + numero + ". " + resultado)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando prompt de saída no javascript</title>
+</head>
+<body>
+    <h1>Testando prompt de saída no javascript</h1>
+    
+    <script>
+        let nota1 = parseFloat(prompt("Insira a nota do primeiro bimestre: "))
+            document.write("A nota do primeiro bimestre é: " + nota1)
+
+        let nota2 = parseFloat(prompt("Insira a nota do segundo bimestre: "))
+            document.write("<br>A nota do segundo bimestre é: " + nota2)
+
+        let nota3 = parseFloat(prompt("Insira a nota do terceiro bimestre: "))
+            document.write("<br>A nota do terceiro bimestre é: " + nota3)
+
+        let nota4 = parseFloat(prompt("Insira a nota do quarto bimestre: "))
+            document.write("<br>A nota do quarto bimestre é: " + nota4)
+
+        let media = (nota1 + nota2 + nota3 + nota4) / 4
+            document.write("<br> <br>A média do aluno é: " + media)
+    </script>
+</body>
+</html>

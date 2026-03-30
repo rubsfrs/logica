@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando comandos condicionais usando javascript</title>
+</head>
+<body>
+    <h1>Testando comandos condicionais IF</h1>
+
+    <script>
+        let nota1 = parseFloat(prompt("Insira a nota do primeiro bimestre: "))
+            document.write("A nota do primeiro bimestre é: " + nota1)
+
+        let nota2 = parseFloat(prompt("Insira a nota do segundo bimestre: "))
+            document.write("<br>A nota do segundo bimestre é: " + nota2)
+
+        let nota3 = parseFloat(prompt("Insira a nota do terceiro bimestre: "))
+            document.write("<br>A nota do terceiro bimestre é: " + nota3)
+
+        let nota4 = parseFloat(prompt("Insira a nota do quarto bimestre: "))
+            document.write("<br>A nota do quarto bimestre é: " + nota4)
+
+        let media = (nota1 + nota2 + nota3 + nota4) / 4
+            document.write("<br> <br>A média do aluno é: " + media)
+
+        if (media >= 6){ //if é usado para criar uma condição, ou seja, se a média for maior ou igual a 6, o aluno é aprovado
+            alert("Parabéns, você foi aprovado!")
+        }else if(media >= 5){ //else if é usado para criar uma condição alternativa, ou seja, se a média for maior ou igual a 5 e menor que 6, o aluno está de recuperação
+            alert("Você está de recuperação! Estude mais!")
+        }else{ //else é usado para criar uma condição final, ou seja, se a média for menor que 5, o aluno é reprovado
+            alert("Você foi reprovado!")
+        }
+
+    </script>
+</body>
+</html>

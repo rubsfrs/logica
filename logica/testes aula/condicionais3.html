@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <h1>Calcule seu índice de massa corporal (IMC)</h1>
+
+    <script>
+        let peso = parseFloat(prompt("Digite seu peso em kg: "))
+        let altura = parseFloat(prompt("Digite sua altura em metros: "))
+        let imc = peso / (altura * altura)
+
+        document.write("Seu peso é: " + peso + " kg")
+        document.write("<br>Sua altura é: " + altura + " m")
+        document.write("<br>Seu IMC é: " + imc.toFixed(2)) //toFixed(2) serve para limitar o número de casas decimais para 2
+
+        if (imc < 18.5){
+            alert("Você está abaixo do peso ideal.")
+        }
+        else if (imc >= 18.5 && imc < 25){ //&& é o operador lógico "E", ou seja, a condição só será verdadeira se as duas condições forem verdadeiras
+            alert("Você está com o peso ideal.")
+        }
+        else if (imc >= 25 && imc < 30){
+            alert("Você está acima do peso ideal.")
+        }
+        else{
+            alert("Você está com obesidade.")
+        }
+    </script>
+</body>
+</html>

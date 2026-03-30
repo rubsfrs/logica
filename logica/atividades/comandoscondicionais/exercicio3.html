@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de crédito</title>
+</head>
+<body>
+    <h1>Calculadora de crédito</h1>
+    <h2><br>Calcule aqui o valor do crédito com base no saldo médio</h2>
+
+    <script>
+        let saldoMedio = parseFloat(prompt("Digite o saldo médio do cliente: "))
+
+        if (saldoMedio <= 500){
+            credito = saldoMedio * 1
+        }
+        else if (saldoMedio > 501 && saldoMedio <= 1000) // && é usado para verificar se múltiplas condições são verdadeiras ao mesmo tempo
+        {
+            credito = saldoMedio * 1.30
+        }
+        else if (saldoMedio > 1001 && saldoMedio <= 3000){
+            credito = saldoMedio * 1.40
+        }
+        else{
+            credito = saldoMedio * 1.50
+        }
+
+        document.write("O saldo médio do cliente é: R$ " + saldoMedio.toFixed(2))
+        document.write("<br>O valor do crédito é: R$ " + credito.toFixed(2))
+    </script>
+</body>
+</html>

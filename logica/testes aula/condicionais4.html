@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos condicionais usando javascript</title>
+</head>
+<body>
+    <h1>Testando comandos switch/case</h1>
+
+    <script>
+        let semaforo = prompt("Digite a cor do semáforo: ").toLowerCase()
+
+            switch (semaforo){
+                case "vermelho": alert("PARE!")
+                break;
+                case "amarelo": alert("ATENÇÃO!")
+                break;
+                case "verde": alert("Siga em frente!")
+                break;
+                default: alert("Cor inválida! Digite vermelho, amarelo ou verde.")
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comissão</title>
+</head>
+<body>
+    <h1>Calculadora de Comissão</h1>
+
+    <script>
+        let nome = prompt("Digite o nome do vendedor: ")
+        let salarioFixo = parseFloat(prompt("Digite o salário fixo do vendedor: "))
+        let vendas = parseFloat(prompt("Digite o total de vendas em R$ do vendedor: "))
+
+        let salarioFinal = vendas + salarioFixo * 1.15
+
+        document.write("Nome: " + nome)
+        document.write("<br>Salário Fixo: R$ " + salarioFixo.toFixed(2))
+        document.write("<br>Salário no fim do mês: R$ " + salarioFinal.toFixed(2))
+    </script>
+</body>
+</html>

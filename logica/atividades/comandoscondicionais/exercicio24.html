@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de números</title>
+</head>
+<body>
+    <h1>Calculadora de soma (apenas de números positivos)</h1>
+
+    <script>
+        let num1 = parseFloat(prompt("Digite o primeiro número: "))
+        let num2 = parseFloat(prompt("Digite o segundo número: "))
+        let num3 = parseFloat(prompt("Digite o terceiro número: "))
+        let num4 = parseFloat(prompt("Digite o quarto número: "))
+        let num5 = parseFloat(prompt("Digite o quinto número: "))
+
+        if (num1 < 0 || num2 < 0 || num3 < 0 || num4 < 0 || num5 < 0) {
+            document.write("Não somamos números negativos. Tente novamente usando apenas números positivos.")
+        } else {
+            let soma = num1 + num2 + num3 + num4 + num5
+            document.write("A soma de todos os números é: " + soma)
+        }
+
+        // não fiz a questão 25 pois é a mesma coisa dessa aqui.
+    </script>
+</body>
+</html>
