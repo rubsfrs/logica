@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    background-color: #C5DBF2;
+    color: #241C15;
+    font-family: Verdana;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    height: 70px;
+    padding: 32px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 60px;
+}
+
+header a{
+    text-decoration: none;
+    color: #241C15;
+}
+
+#botoes{
+    gap: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#botoes a{
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+.botaoConectar{
+    border: solid 1px #241C15;
+    background-color: transparent;
+}
+
+.botaoVerde{
+    background-color: #007C89;
+    color: white;
+    width: auto;
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 300px; 
+}
+
+#titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#titulos a{
+    font-weight: 600;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+}
+
+h1{
+    font-family: fraunces;
+    font-weight: 500;
+    font-size: 64px;
+    margin-bottom: 48px;
+    line-height: 1;
+}
+
+h2{
+    font-family: helvetica;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 32px;
+}
+
+section a{
+    margin-top: 48px;
+    padding: 20px 36px;
+    text-decoration: none;
+}
+
+#imagens{
+    width: 750px;
+    height: 475px;
+    margin-left: 40px;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+#bege{
+    border: 2px solid #241C15;
+    border-radius: 16px;
+    height: 410px;
+    width: 85%;
+    text-align: center;
+    background-color: #F7D5C5
+}
+
+#pote{
+    width: 275px;
+    margin-top: 20px;
+    margin-right: 250px;
+    
+}
+
+#bege h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #FA765A;
+    font-family: urbanist;
+    font-size: 28px;
+}
+
+#cimaBege{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+#pontinhos{
+    width: 27px;
+    height: 15px;
+    align-self: flex-start;
+    margin: 5px;
+}
+
+#carrinho{
+    width: 24px;
+    height: 22px;
+    margin-left: 88%;
+}
+
+#branco{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    border-radius: 16px;
+    border: 2px solid #241C15;
+    top: 155px;
+    left: 375px;
+    overflow: hidden;
+}
+
+#brancoHeader{
+    background-color: #EEEEEC;
+    border-bottom: 2px solid #241C15;
+    padding: 14px 20px;
+}
+
+#brancoHeader h3{
+    font-family: fraunces;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.imgBranco{
+    height: 350px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#itensBranco{
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+#botaoCart{
+    width: auto;
+    background-color: #007C89;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
