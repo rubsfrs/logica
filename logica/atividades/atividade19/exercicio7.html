@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <script>
+        let somaNotas = 0
+
+        for (let i = 1; i <= 6; i++){
+
+            let nota = parseFloat(prompt("Digite a nota: "))
+
+            while (nota < 0 || nota > 10){
+                alert("Nota inválida! Digite um valor de 0 a 10.")
+                nota = parseFloat(prompt("Digite a nota novamente: "))
+            }
+
+            somaNotas += nota;
+
+        }
+
+        let mediaFinal = somaNotas / 6
+
+        alert("A média das 6 notas é: " + mediaFinal.toFixed(2))
+    </script>
+</body>
+</html>

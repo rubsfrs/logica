@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <script>
+
+        let aprovados = 0
+        let continuar = "S"
+
+        while(continuar.toUpperCase() === "S"){
+
+            let nota1 = parseFloat(prompt("Primeira nota: "))
+            let nota2 = parseFloat(prompt("Segunda nota: "))
+
+            let media = (nota1 + nota2) / 2
+                if (media >= 9.5){
+                    alert("Você foi aprovado!");
+                    aprovados++;                   
+                } else {
+                    alert("Você foi reprovado!")
+                }
+        continuar = prompt("Calcular a média de outro aluno S/N");
+        }
+
+
+
+        alert("Quantidade de alunos aprovados: " + aprovados)
+    </script>
+</body>
+</html>
