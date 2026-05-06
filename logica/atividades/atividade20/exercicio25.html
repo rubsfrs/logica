@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 25</title>
+</head>
+<body>
+    <script>
+        let a = 0, b = 1;
+        let contador = 0;
+
+        do {
+            console.log(a);
+            let proximo = a + b;
+            a = b;
+            b = proximo;
+            contador++;
+        } while (contador < 20);
+    </script>
+</body>
+</html>

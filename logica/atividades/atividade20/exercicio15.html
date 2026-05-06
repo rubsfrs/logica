@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+<body>
+    <script>
+        let somaIdades = 0;
+        let contador = 0;
+
+        while (true) {
+            let nome = prompt("Digite o nome (ou 'fim' para sair):");
+    
+            if (nome.toLowerCase() === "fim") {
+                break;
+            }
+
+            let idade = parseInt(prompt("Digite a idade:"));
+            somaIdades += idade;
+            contador++;
+        }
+
+        if (contador > 0) {
+            console.log("Média das idades: " + (somaIdades / contador));
+        } else {
+            console.log("Nenhum dado foi inserido.");
+        }
+    </script>
+</body>
+</html>
